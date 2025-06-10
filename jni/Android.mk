@@ -57,7 +57,6 @@ RAKNET_SRC := \
     vendor/raknet/DS_Table.cpp \
     vendor/raknet/Rand.cpp \
     vendor/raknet/SHA1.cpp \
-    vendor/raknet/SHA1.cpp \
     vendor/raknet/RakNetStatistics.cpp \
     vendor/raknet/RakNetworkFactory.cpp \
     vendor/raknet/SAMP/SAMPRPC.cpp
