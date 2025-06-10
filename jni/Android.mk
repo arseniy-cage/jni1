@@ -55,7 +55,7 @@ RAKNET_SRC := \
     vendor/raknet/StringCompressor.cpp \
     vendor/raknet/GetTime.cpp \
     vendor/raknet/DS_Table.cpp \
-    vendor/raknet/rand.cpp \
+    vendor/raknet/Rand.cpp \
     vendor/raknet/DR_SHA1.cpp \
     vendor/raknet/DR_SHA1.cpp \
     vendor/raknet/RakNetStatistics.cpp \
