@@ -60,8 +60,7 @@ RAKNET_SRC := \
     vendor/raknet/SHA1.cpp \
     vendor/raknet/RakNetStatistics.cpp \
     vendor/raknet/RakNetworkFactory.cpp \
-    vendor/raknet/SAMP/SAMP.cpp \
-    vendor/raknet/SAMP/RPC.cpp
+    vendor/raknet/SAMP/SAMPRPC.cpp
 
 # Другие vendor-файлы
 VENDOR_SRC := \
