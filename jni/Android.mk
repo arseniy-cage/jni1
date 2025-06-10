@@ -54,7 +54,7 @@ RAKNET_SRC := \
     vendor/raknet/RakPeer.cpp \
     vendor/raknet/RakClient.cpp \
     vendor/raknet/StringCompressor.cpp \
-    vendor/raknet/HuffmanEncodingTree.cpp \
+    vendor/raknet/DS_HuffmanEncodingTree.cpp \
     vendor/raknet/GetTime.cpp \
     vendor/raknet/DS_Table.cpp \
     vendor/raknet/Rand.cpp \
