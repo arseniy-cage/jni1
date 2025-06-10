@@ -51,15 +51,19 @@ FILE_LIST := \
 # Файлы RakNet (явное указание для надежности)
 RAKNET_SRC := \
     vendor/raknet/BitStream.cpp \
+    vendor/raknet/RakPeer.cpp \
     vendor/raknet/RakClient.cpp \
     vendor/raknet/StringCompressor.cpp \
+    vendor/raknet/HuffmanEncodingTree.cpp \
     vendor/raknet/GetTime.cpp \
     vendor/raknet/DS_Table.cpp \
     vendor/raknet/Rand.cpp \
     vendor/raknet/SHA1.cpp \
     vendor/raknet/RakNetStatistics.cpp \
     vendor/raknet/RakNetworkFactory.cpp \
-    vendor/raknet/SAMP/SAMPRPC.cpp
+    vendor/raknet/SocketLayer.cpp \
+    vendor/raknet/PacketLogger.cpp \
+    vendor/raknet/SAMPRPC.cpp
 
 # Другие vendor-файлы
 VENDOR_SRC := \
