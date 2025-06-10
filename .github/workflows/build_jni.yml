@@ -1,0 +1,41 @@
+name: Build JNI libsampvoice.so
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Clean previous build artifacts (important for .d file issues)
+      run: |
+        rm -rf libs/ obj/ # Удаляем папки, которые могут содержать проблемные .d файлы
+
+    - name: Set up Android NDK and SDK
+      run: |
+        echo "ANDROID_SDK_ROOT=$ANDROID_SDK_ROOT" >> $GITHUB_ENV
+        echo "ANDROID_NDK_HOME=$ANDROID_NDK_LATEST_HOME" >> $GITHUB_ENV
+        echo "$ANDROID_NDK_LATEST_HOME" >> $GITHUB_PATH
+
+    - name: Compile JNI with ndk-build
+      run: |
+        # Перейдите в директорию, где находится ваш Android.mk
+        ndk-build -C . APP_ABI=armeabi-v7a
+      env:
+        NDK_PROJECT_PATH: "${{ github.workspace }}"
+
+    - name: Upload libsampvoice.so artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: libsampvoice_armeabi-v7a
+        path: libs/armeabi-v7a/libsampvoice.so
