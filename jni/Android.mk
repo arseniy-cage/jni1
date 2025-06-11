@@ -26,8 +26,8 @@ LOCAL_LDLIBS := -llog -lOpenSLES -latomic
 LOCAL_C_INCLUDES := \
     $(LOCAL_PATH) \
     $(LOCAL_PATH)/vendor \
-    $(LOCAL_PATH)/vendor/RakNet \
-    $(LOCAL_PATH)/vendor/RakNet/SAMP \
+    $(LOCAL_PATH)/vendor/raknet \
+    $(LOCAL_PATH)/vendor/raknet/SAMP \
     $(LOCAL_PATH)/vendor/openal \
     $(LOCAL_PATH)/vendor/opus \
     $(LOCAL_PATH)/vendor/enet \
@@ -62,7 +62,7 @@ RAKNET_SRC := \
     vendor/raknet/RakNetStatistics.cpp \
     vendor/raknet/RakNetworkFactory.cpp \
     vendor/raknet/SocketLayer.cpp \
-    vendor/raknet/SAMPRPC.cpp
+    vendor/raknet/SAMP/SAMPRPC.cpp
 
 # Другие vendor-файлы
 VENDOR_SRC := \
