@@ -62,7 +62,6 @@ RAKNET_SRC := \
     vendor/raknet/RakNetStatistics.cpp \
     vendor/raknet/RakNetworkFactory.cpp \
     vendor/raknet/SocketLayer.cpp \
-    vendor/raknet/PacketLogger.cpp \
     vendor/raknet/SAMPRPC.cpp
 
 # Другие vendor-файлы
